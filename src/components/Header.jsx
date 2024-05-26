@@ -10,13 +10,13 @@ const Header = () => {
   const nav = document.querySelector("#nav")
 
   const showNav = ()=>{
-    // nav.style.right = "0px"
-    nav.classList.toggle("toggle-nav")
+    nav.style.right = "0px"
+    // nav.classList.remove("toggle-nav")
   }
 
   const hideNav = ()=>{
-    // nav.style.right = "-300px"
-    nav.classList.toggle("toggle-nav")
+    nav.style.right = "-300px"
+    // nav.classList.add("toggle-nav")
   }
 
   const borderRadius = {
@@ -29,7 +29,8 @@ const Header = () => {
         <i className="fa-solid fa-code text-sky-400"></i>
         <h2 className="text-white">JsFrameworks</h2>
       </div>
-      <nav id="nav" className="toggle-nav right-0 transition-all duration-300 p-5 fixed top-0 bottom-0 w-[200px] backdrop-blur-sm bg-slate-800 flex flex-col gap-[30px] border-l border-slate-700 h-[100vh] md:items-center md:flex md:relative md:h-fit md:right-[0px] md:flex-row md:bg-inherit md:w-fit md:border-0 md:p-0">
+      
+      <nav id="nav" className=" right-[-300px] transition-all duration-300 p-5 fixed top-0 bottom-0 w-[200px] backdrop-blur-sm bg-slate-800 flex flex-col gap-[30px] border-l border-slate-700 h-[100vh] md:items-center md:flex md:relative md:h-fit md:right-[0px] md:flex-row md:bg-inherit md:w-fit md:border-0 md:p-0">
         <div onClick={hideNav} className="menu px-3 py-2 border-[3px] cursor-pointer md:hidden hover:border-slate-500 hover:text-sky-500 transition-all border-slate-700 text-xl text-sky-400 w-fit" style={borderRadius} >
           <i class="fa-solid fa-x"></i>
         </div>
